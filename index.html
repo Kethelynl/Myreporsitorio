@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./templates/static/css/dox.css">
+    <title>Document</title>
+</head>
+<body>
+      <!-- Container onde fica a nav-list -->
+      <div class="list-head">
+        <div class="nav-list">
+            <h1 id="title">&lt;Kethelyn&gt;</h1>
+            <ul class="pag">
+                <li><a href="#" class="link" id="home">Home</a></li>
+                <li><a href="#section1" class="link" id="tecnologias">Tecnologias</a></li>
+                <li><a href="#section2" class="link" id="projetos">Projetos</a></li>
+                <li><a href="#section3" class="link" id="servicos">Serviços</a></li>
+                <li><a href="#section4" class="link" id="blog">Blog</a></li>
+            </ul>
+            
+            <ul class="contact">
+                <li><a href="https://github.com/Kethelynl" class="icon"><img src="./templates/static/img/github.png" ></a></li>
+                <li><a href="https://www.linkedin.com/in/kethelyn-cavalari/" class="icon"><img src="./templates/static/img/linkedin.png" alt=""></a></li>
+                <li><a href="https://wa.me/5511984870198?text=Olá%2C%20gostei%20do%20seu%20perfil%20podemos%20conversar?" target="_blank" class="icon"><img src="./templates/static/img/whatss.png" alt=""></a></li>
+            </ul>
+            <select id="languageSelector" onchange="changeLanguage()">
+                <option value="en">English</option>
+                <option value="pt">Português</option>
+            </select>
+        </div>
+    </div>
+    <div class="list-head-movel">
+        <div class="nav-list-movel">
+            <h1 id="title">&lt;Kethelyn&gt;</h1>
+            <select id="languageSelector" onchange="changeLanguage()">
+                <option value="en">English</option>
+                <option value="pt">Português</option>
+            </select>
+
+            <div class="menu">
+                <a type="submit" id="menu"><img src="./templates/static/img/menu-preto.png" alt=""></button></a>
+            </div>
+        </div>
+        <div class="menu-icon" id="menu-icon">
+            <ul class="pag-movel">
+                <li><a href="#" class="link-movel" id="home">Home</a></li>
+                <li><a href="#section1" class="link-movel" id="tecnologias">Tecnologias</a></li>
+                <li><a href="#section2" class="link-movel" id="projetos">Projetos</a></li>
+                <li><a href="#section3" class="link-movel" id="servicos">Serviços</a></li>
+                <li><a href="#section4" class="link-movel" id="blog">Blog</a></li>
+            </ul>
+        </div>
+    </div>
+    <br>
+    <br>
+    <!-- container com a nav-bar, a estrutura do projeto-->
+    <div class="container-main">
+        <div class="nav-bar">
+            <p class="ola" id="ola">Olá, eu sou a</p>
+            <h3>Kethelyn Cavalari</h3>
+            <br>
+            <p class="funcao" id="funcao">Web Developer</p>
+
+            <p class="texto_entrada" id="texto_entrada">Tenho mais de 2 anos de experiência estudando programação e já desenvolvi diversos projetos pequenos, enfrentando e resolvendo uma ampla gama de desafios. Minha ambição é continuar crescendo e criar projetos ainda maiores. Estou pronta para transformar suas ideias em sucesso. Vamos conversar e tornar isso realidade?</p>
+            <br>
+            <a href="https://wa.me/5511984870198?text=Olá%2C%20gostei%20do%20seu%20perfil%20podemos%20conversar?" target="_blank" id="btn-conversar">Vamos Conversar</a>
+        </div>
+        <div class="img-banner">
+           <img src="./templates/static/img/banner.png" alt="">
+        </div>
+    </div>
+    <br id="section1">
+    <br>
+    <div class="container2">
+        <div class="container2_config">
+            <p class="tecn" id="mystacks">Minhas stacks de tecnologia</p>
+            <br>
+            <div class="stacks">
+                <div class="card">
+                    <img src="./templates/static/img/html.png" alt="">
+                    <br>
+                    <p id="html">Linguagem de marcação usada para estruturar o conteúdo de páginas web.</p>
+                </div>
+                <div class="card">
+                    <img src="./templates/static/img/css.png" alt="">
+                    <br>
+                    <p id="css">Linguagem de estilo que define a aparência visual de páginas web.</p>
+                </div>
+                <div class="card">
+                    <img src="./templates/static/img/js.png" alt="">
+                    <br>
+                    <p id="js">Linguagem de programação que adiciona interatividade e funcionalidades dinâmicas aos sites.</p>
+                </div>
+                <div class="card">
+                    <img src="./templates/static/img/django.png" alt="">
+                    <br>
+                    <p id="django">Framework web em Python, focado em desenvolvimento rápido e seguro de aplicações.</p>
+                </div>
+                <div class="card">
+                    <img src="./templates/static/img/python.png" alt="">
+                    <br>
+                    <p id="py">Linguagem de programação versátil, usada em diversas áreas, incluindo web, ciência de dados e automação.</p>
+                </div>
+                <div class="card">
+                    <img src="./templates/static/img/php.png" alt="">
+                    <br>
+                    <p id="php">Linguagem de programação voltada para desenvolvimento web dinâmico e processamento no servidor.</p>
+                </div>
+                <div class="card">
+                    <img src="./templates/static/img/sql.png" alt="">
+                    <br>
+                    <p id="sql">Sistema de gerenciamento de banco de dados relacional amplamente usado para armazenar dados de aplicações web.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br id="section3">
+    <br>
+    <div class="container44">
+        <p class="what_make" id="what_do">O que eu faço</p>
+        <div class="container-4">
+            <br>
+            <div class="cards4">
+               <div class="card4 active" id="sit">
+                  <img src="./templates/static/img/undraw_Completed_m9ci.png" alt="">
+                  <p id="site">Como desenvolvedora, trago ideias e vida através de códigos. Transformo conceitos abstratos em soluções digitais, criando experiências interativas e funcionais.Faço seu site se tornar realidade.</p>
+               </div>
+               <div class="card4" id="respo">
+                  <p id="responsivo">Crio sites responsivos que se adaptam a qualquer tamanho de tela, proporcionando a melhor experiência de interação para o usuário.</p>
+                  <img src="./templates/static/img/responsivo.png" alt="">
+               </div>
+               <div class="card4" id="jog">
+                <img src="./templates/static/img/undraw_mobile_content_xvgr.png" alt="">
+                <p id="jogos">Transformo ideias em experiências divertidas e acessíveis. <br> Com criatividade e código, dou vida a mundos virtuais, onde cada detalhe é projetado para entreter e envolver.</p>
+               </div>
+            </div>
+        </div>
+        <button class="next" id="rolagem" type="submit">&#10095;</button>
+    </div>
+    <br  id="section2">
+    <br>
+    <div class="container3">
+        <div class="container3-config">
+            <p class="project" id="projetos_p">Projetos</p>
+            <br>
+            <div class="cards">
+                <div class="card-project">
+                    <p id="em_breve">Em breve</p>
+                </div>
+                <div class="card-project">
+                    <p id="em_brev">Em breve</p>
+                </div>
+                <div class="card-project">
+                    <p id="em_bre">Em breve</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br id="section4">
+    <br>
+    <div class="container5">
+        <div class="perfil">
+            <img src="./templates/static/img/eu.jpeg" alt="">
+            <p>Kethelyn</p>
+            <br>
+            <br>
+        </div>
+        <div class="aboutme">
+            <p id="aboutme">Sou estudante de Engenharia da Computação na Cruzeiro do Sul e tenho grande interesse em programação. Descobri que essa é a área que realmente me apaixona e me motiva. Dedico-me intensamente aos estudos todos os dias, buscando crescer e me aprimorar constantemente. Amo o que faço e estou determinado a construir uma carreira sólida nesse campo.</p>
+        </div>
+        <br>
+        <br>
+        <div class="contactos">
+            <br>
+            <h5 id="letgotalk">Vamos conversar?</h5>
+            <br>
+            <ul class="contact2">
+                <li><a href="https://github.com/Kethelynl" class="icon"><img src="./templates/static/img/github.png" ></a></li>
+                <li><a href="https://www.linkedin.com/in/kethelyn-cavalari/" class="icon"><img src="./templates/static/img/linkedin.png" alt=""></a></li>
+                <li><a href="https://wa.me/5511984870198?text=Olá%2C%20gostei%20do%20seu%20perfil%20podemos%20conversar?" target="_blank" class="icon"><img src="./templates/static/img/whatss.png" alt=""></a></li>
+                <li><a href="mailto:kethcavalari@gmail.com" class="icon"><img src="./templates/static/img/email.png" alt=""></a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="./templates/static/js/language.js"></script>
+    <script src="./templates/static/js/base.js"></script>
+</body>
+</html>

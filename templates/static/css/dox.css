@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: Poppins, sans-serif;
+    border: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.list-head-movel{
+    display: none;
+}
+
+.list-head{
+    width: 100%;
+    top: -0.7%;
+    height: 45px;
+    position: fixed;
+    background-color: white;
+    
+}
+
+.nav-list{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    justify-content: space-between;
+
+}
+
+.menu img{
+    width: 90%;
+}
+
+.menu{
+    display: none;
+    width: 15%;
+}
+
+h1{
+    font-family: Roboto, sans-serif;
+    font-size: 25px;
+    margin-left: 20px;
+    color: #2B124C;
+}
+
+.pag{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+
+
+select{
+    margin-right: 20px;
+    background-color: #c6bbc9;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.link{
+    color: #2B124C;
+    font-weight: 500;
+    position: relative; /* Para que o pseudo-elemento seja posicionado em relação ao link */
+    padding-bottom: 5px; /* Espaçamento para a linha */
+    transition: all 0.3s ease; /* Animação suave ao passar o mouse */
+}
+
+.link::after{
+    content: ''; /* Pseudo-elemento para criar a linha */
+    position: absolute;
+    width: 0; /* Começa com a largura 0 */
+    height: 2px; /* Altura da linha */
+    left: 0;
+    bottom: 0;
+    background-color: #2B124C; /* Cor da linha (preto neste exemplo) */
+    transition: width 0.3s ease; /* Transição suave para a largura */
+}
+
+.link:hover::after {
+    width: 100%; /* Ao passar o mouse, a linha se expande para a largura total do texto */
+}
+
+.contact img{
+    width: 20px;
+}
+
+.contact{
+    display: flex;
+    flex-direction: row;
+    margin-right: 50px;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.container-main{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.img-banner img{
+    width: 400px;
+    border-radius: 10px;
+}
+
+.nav-bar{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.ola{
+    font-size: 30px;
+    font-family: Roboto, sans-serif;
+}
+
+h3{
+    font-size: 30px;
+}
+
+.funcao{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.texto_entrada{
+    font-size: 15px;
+}
+.nav-bar a{
+    text-align: center;
+    width: 30%;
+    padding: 5px 0px 5px;
+    border-radius: 5px;
+    background-color: #5D3c64;
+    color: white;
+    cursor: pointer;
+}
+
+.nav-bar a:hover{
+    background-color: #7B466A;
+    box-shadow: 5px 5px 10px rgb(143, 141, 141);
+}
+
+button.next{
+    padding: 5px 0px 5px;
+    border-radius: 5px;
+    background-color: #5D3c64;
+    color: white;
+    cursor: pointer;
+    transition: all ease 0.8s;
+
+}
+
+button.next:hover{
+    background-color: #7B466A;
+    
+    box-shadow: 5px 5px 10px rgb(143, 141, 141);
+}
+
+.img-banner{
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.container2{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #c6bbc9;
+}
+
+.container2_config{
+    padding: 20px;
+}
+
+.tecn{
+    color: #7B466A;
+    font-weight: bold;
+}
+
+.stacks{
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte se necessário */
+    gap: 16px; /* Espaço entre os itens */
+}
+
+.card{
+    padding: 30px 10px 30px;
+    flex: 1 1 calc(10% - 16px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aliceblue;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all ease 0.4s;
+}
+
+.card:hover{
+    transform: scale(1.1); /* Aumenta 10% o tamanho do cartão */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta a sombra */
+}
+.card img{
+    width: 50px;
+}
+
+.card p{
+    font-size: 10px;
+}
+
+.container3{
+    width: 100%;
+    background-color: #c6bbc9;
+    display: flex;
+    justify-content: center;
+}
+
+.container3-config{
+    margin: 20px;
+}
+
+.container3-config p{
+    color: #7B466A;
+    font-weight: bold;
+    text-align: center;
+}
+
+.project{
+    font-size: 30px;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.card-project{
+    width: 200px;
+    height: 150px;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #4f424f, #5D3c64);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all ease 0.8s;
+}
+
+.card-project:hover{
+    transform:translateY(-5%);
+    background: linear-gradient(to right, #441f44, #f1f0f1, #441f44);
+    box-shadow: 1px 1px 10px #2B124C;
+    
+}
+
+.card-project p{
+    transform-origin: bottom left; /* Define o ponto de origem da rotação */
+    background-color: #5D3c64;
+    width: 100%;
+    margin-right: 30px;
+    transition: all ease 0.8s;
+    color: white;
+    font-weight: bold;
+}
+
+.container44, .container5{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.what_make{
+    font-weight: bold;
+    font-size: 25px;
+    color: #7B466A;
+}
+
+.container-4{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards4 {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;  /* Oculta os elementos que se movem para fora da tela */
+}
+
+.card4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+
+.card4 img {
+    width: 20%;
+}
+
+.card4.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
+.card4.exit-left {
+    transform: translateX(-100%);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.card4.enter-right {
+    transform: translateX(100%);
+    opacity: 1;
+    visibility: visible;
+}
+
+button.next {
+    margin-left: 500px;
+    width: 10%;
+}
+
+
+button.next {
+    right: 0;
+}
+
+.aboutme{
+    text-align: center;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contactos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #5D3c64;
+    width: 100%;
+}
+
+.contact2 img{
+   width: 40px;
+}
+
+.contact2{
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40%;
+}
+
+.contactos h5{
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.perfil img{
+   width: 150px;
+   border-radius: 100px;
+   border:  solid 2px #441f44;
+}
+
+.perfil p{
+    text-align: center;
+}
+
+
+
+@media(max-width: 430px) {
+    .list-head{
+        display: none;
+    }
+
+    .link-movel{
+        color: #ffffff;
+        padding: 5px;
+        transition: all ease 0.8s;
+        border-radius: 10px;
+    }
+
+    .link-movel:hover{
+        background-color: #5D3c64;
+    }
+
+    .img-banner{
+        display: none;
+    }
+
+    .list-head-movel{
+        display: block;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .menu-icon{
+        opacity: 0;
+        visibility: hidden;
+        position: fixed;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 40px;
+        background-color: #c6bbc9;
+        transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+    }
+
+    .menu-icon.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0);
+    }
+    
+    .card4.exit-left {
+        transform: translateX(-100%);
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .nav-list-movel{
+        position: fixed;
+        display: flex;
+        
+        background-color: #ffffff;
+    }
+
+    .menu{
+        margin-right: 20px;
+        margin-top: 10px;
+    }
+
+    .nav-list-movel h1{
+        width: 100%;
+        margin-top: 10px;
+        text-align: start;
+    }
+
+    .pag-movel{
+        text-align:center;
+        margin-top: 15px;
+        
+        display: block;
+    }
+    
+    .container-4{
+        width: 90%;
+    }
+
+    
+    button.next {
+       margin-left: 50%;
+       width: 10%;
+    }
+
+
+    .card4 {
+        flex-direction: column;
+    }
+
+    .card4 img{
+        width: 40%;
+    }
+
+    .cards{
+        flex-direction: column;
+    }
+
+    
+    .contact2{
+        gap: 20%;
+        margin-left: -40px;
+    }
+
+    .menu{
+        display: block;
+    }
+
+    select{
+        width: 40%;
+        height: 50%;
+        margin-top: 10px;
+    }
+    
+}
