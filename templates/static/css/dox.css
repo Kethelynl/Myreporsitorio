@@ -408,19 +408,18 @@ button.next {
 
 
 @media(max-width: 430px) {
-    .list-head{
+    .pag{
         display: none;
     }
 
-    .link-movel{
-        color: #ffffff;
-        padding: 5px;
-        transition: all ease 0.8s;
-        border-radius: 10px;
+    .menu{
+        display: block;
+        width: 10%;
+        margin-right: 10px;
     }
 
-    .link-movel:hover{
-        background-color: #5D3c64;
+    select{
+        height: 30px;
     }
 
     .img-banner{
@@ -428,11 +427,14 @@ button.next {
     }
 
     .list-head-movel{
-        display: block;
+        margin-top: 77px;
         width: 100%;
+        text-align: center;
         display: flex;
-        flex-direction: column;
-        
+        align-items: center;
+        justify-content: center;
+        background-color: #d0c1d0;
+        position: fixed;
     }
 
     .menu-icon{
@@ -452,75 +454,37 @@ button.next {
         visibility: visible;
         transform: translateX(0);
     }
-    
-    .card4.exit-left {
-        transform: translateX(-100%);
-        opacity: 0;
-        visibility: hidden;
+
+    .link-movel{
+        color: #ffffff;
+        padding: 5px;
+        transition: all ease 0.3s;
+        border-radius: 10px;
     }
 
-    .nav-list-movel{
-        position: fixed;
-        display: flex;
-        
-        background-color: #ffffff;
+    .link-movel:hover{
+        background-color: #5D3c64;
     }
 
-    .menu{
-        margin-right: 55px;
-        margin-top: 10px;
-    }
-
-    .nav-list-movel h1{
-        width: 100%;
-        margin-top: 10px;
-        text-align: start;
-    }
-
-    .pag-movel{
-        text-align:center;
-        margin-top: 15px;
-        
-        display: block;
-    }
-    
-    .container-4{
-        width: 90%;
-    }
-
-    
     button.next {
-       margin-left: 50%;
-       width: 10%;
-    }
+        margin-left: 50%;
+        width: 10%;
+     }
+ 
+ 
+     .card4 {
+         flex-direction: column;
+     }
+ 
+     .card4 img{
+         width: 40%;
+     }
+ 
+     .cards{
+         flex-direction: column;
+     }
 
-
-    .card4 {
-        flex-direction: column;
-    }
-
-    .card4 img{
-        width: 40%;
-    }
-
-    .cards{
-        flex-direction: column;
-    }
-
+  
     
-    .contact2{
-        gap: 20%;
-        margin-left: -40px;
-    }
-
-    .menu{
-        display: block;
-    }
-
-    select{
-        width: 40%;
-        height: 50%;
-        margin-top: 10px;
-    }
     
 }
